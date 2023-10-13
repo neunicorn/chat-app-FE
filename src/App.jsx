@@ -1,9 +1,14 @@
-import { Register } from "./pages";
+import { UserContextProvider } from "./Context";
+import Routes from "./routes/Routes";
 
 function App() {
 
 
-  return <Register />
+  return (
+    <UserContextProvider>
+      <Routes />
+    </UserContextProvider>
+  )
 }
 
 export default App;
